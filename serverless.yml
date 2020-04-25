@@ -1,0 +1,16 @@
+service: izone-mail-notify
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: production
+  region: ap-northeast-1
+
+functions:
+  izone-mail-notify:
+    handler: index.handler
+    timeout: 900
+    events:
+      - sqs:
+          arn:
+          batchSize: 1

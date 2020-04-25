@@ -1,0 +1,11 @@
+{
+  "name": "izone-mail-notify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.663.0",
+    "form-data": "^3.0.0",
+    "got": "^11.0.2"
+  }
+}
